@@ -1,0 +1,159 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+}
+p, h3, h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.3;
+
+}
+h3{
+    text-transform: uppercase;
+}
+header{
+    background-color: black;
+    color: white;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo{
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    margin-left: 5%;
+}
+#menu{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+li{
+    float: left;
+    padding: 25 10 25 10;
+}
+li:hover{
+    background-color: blue;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#imagemcapa{
+    background: url(imagem/fundo\ 2.jpg);
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding-top: 10%;
+    font-size: 70px;
+    line-height: 0.6;
+}
+#subtítulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 3px solid white;
+    text-shadow: 2px 2px black;
+}
+#açao {
+    text-shadow: 1px 1px black;
+    font-family: sans-serif;
+    border: 3px solid white;
+    border-radius: 8px;
+    color: white;
+    padding: 10 20 10 20;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0 20px 0;
+  }
+  
+  .destaque {
+      background-color:whitesmoke;
+  }
+  
+  .imgpolos{
+      width: 100%;
+      height: 50%;
+          
+  }
+  .justificado{
+      text-align: justify;
+  }
+  .centralizado{
+      text-align: center;
+  }
+  .icone img{
+      max-width: 60%;
+      max-height: 60%;
+      margin: 15px;
+  }
+  .coluna:hover > .icone {
+      background: lightblue;
+  }
+  .coluna {
+      float: left;
+      padding: 0 5%;
+      position: relative;
+  }
+  .dois{
+      width: 40%;
+  }
+  
+  .tres{
+      width:29%;
+      padding: 0 2%;
+  }
+  
+  .quatro{
+      width: 15%;
+  }
+  
+  footer{
+      background-color:black;
+      float: left;
+      color: white;
+      width: 100%;
+      height: 30%;
+  }
+  @media all and (max-width: 768px) {
+      #menu {
+          visibility: hidden;
+      } 
+      .coluna, .dois, .tres, .quatro {
+           display: block;   
+           width: 80%;
+           padding: 0;
+           margin: 10px auto;
+           float: none;
+      }
+      #divlogo{
+          width: 100%;
+          position: relative;
+          text-align: center;
+          padding: 0px;
+      }
+      #logo {
+          margin-left: 0px;
+          transform: translateX(-50%);
+      }
+   }
